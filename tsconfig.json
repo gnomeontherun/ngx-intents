@@ -14,6 +14,10 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "ngx-voice": ["libs/ngx-voice-lib"]
+    }
   }
 }
