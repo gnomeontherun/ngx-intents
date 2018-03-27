@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
-  "name": "ngx-voice-lib",
+  "name": "ngx-voice",
   "version": "0.1.0",
   "license": "MIT",
   "private": true,
@@ -12,6 +12,6 @@
     "lib": {
       "entryFile": "public_api.ts"
     },
-    "dest": "../../dist/ngx-voice-lib"
+    "dest": "../../dist/ngx-voice"
   }
 }
