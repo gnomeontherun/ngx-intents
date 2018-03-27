@@ -1,7 +1,7 @@
 import {BrowserModule } from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
-import {NgxVoiceModule} from 'ngx-voice';
+import {NgxVoiceModule, NgxVoiceWebModule} from 'ngx-voice';
 
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
@@ -19,6 +19,7 @@ import {Page3Component} from './pages/page3/page3.component';
   imports: [
     BrowserModule,
     NgxVoiceModule,
+    NgxVoiceWebModule,
     AppRoutingModule
   ],
   providers: [],

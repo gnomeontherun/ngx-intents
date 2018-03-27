@@ -23,5 +23,8 @@
       "ngx-voice/web/speech": ["libs/ngx-voice/web/speech"],
       "ngx-voice/web/text": ["libs/ngx-voice/web/text"]
     }
-  }
+  },
+  "exclude": [
+    "dist/**"
+  ]
 }

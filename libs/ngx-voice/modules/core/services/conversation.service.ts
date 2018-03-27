@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
-import { merge } from 'rxjs/observable/merge';
+import { concat } from 'rxjs/observable/concat';
 import { NgxVoiceMessage } from './message.interface';
 
 /**
@@ -37,7 +37,7 @@ export class NgxVoiceConversationService {
      * Combined stream of user and agent conversation
      */
     get stream(): Observable<NgxVoiceMessage> {
-        return merge(this.userStream, this.agentStream);
+        return concat(this.userStream, this.agentStream);
     }
 
     /**
