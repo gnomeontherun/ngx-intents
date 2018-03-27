@@ -1,10 +1,15 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { NgxVoiceWebTextService } from './text.service';
 import { NgxVoiceModule } from '../../core/ngx-voice.module';
 
 @NgModule({
-  imports: [NgxVoiceModule],
-  providers: [NgxVoiceWebTextService],
-  exports: [NgxVoiceWebTextService]
+  imports: [NgxVoiceModule]
 })
-export class NgxVoiceWebTextModule {}
+export class NgxVoiceWebTextModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: NgxVoiceWebTextModule,
+      providers: [NgxVoiceWebTextService]
+    }
+  }
+}

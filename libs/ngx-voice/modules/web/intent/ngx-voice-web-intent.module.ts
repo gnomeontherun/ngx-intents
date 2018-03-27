@@ -1,10 +1,15 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { NgxVoiceWebIntentService } from './intent.service';
 import { NgxVoiceModule } from '../../core/ngx-voice.module';
 
 @NgModule({
-  imports: [NgxVoiceModule],
-  providers: [NgxVoiceWebIntentService],
-  exports: [NgxVoiceWebIntentService]
+  imports: [NgxVoiceModule]
 })
-export class NgxVoiceWebIntentModule {}
+export class NgxVoiceWebIntentModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: NgxVoiceWebIntentModule,
+      providers: [NgxVoiceWebIntentService]
+    }
+  }
+}

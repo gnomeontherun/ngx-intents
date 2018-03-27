@@ -11,8 +11,8 @@ export interface NgxVoiceRegexpIntention {
  * Service to process intention mapping using regexp
  */
 @Injectable()
-export class NgxVoiceWebIntentService {
-    private intentions: any[];
+export class NgxVoiceWebIntentService implements NgxVoiceIntent {
+    private intentions: any[] = [];
 
     /**
      * Add intentions to the service for processing, sorts by priority so higher priorities will match first
@@ -42,7 +42,7 @@ export class NgxVoiceWebIntentService {
         let result: boolean|any[] = false;
         for (const intention of this.intentions) {
             for (const pattern of intention.patterns) {
-                const match = text.match(intention.patterns);
+                const match = text.match(pattern);
                 if (match) {
                     result = match;
                     continue;
