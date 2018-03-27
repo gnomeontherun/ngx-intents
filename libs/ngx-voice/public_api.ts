@@ -1,1 +1,2 @@
-export { NgxVoiceModule } from './src/ngx-voice.module';
+export * from './modules/core/index';
+export * from './modules/web/index';
