@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc/app",
+    "module": "es2015"
+  },
+  "include": [
+    "**/*.ts",
+    "../../../libs/ngx-voice/index.ts"
+  ],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
