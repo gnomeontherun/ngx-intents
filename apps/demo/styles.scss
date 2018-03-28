@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+  
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size:5rem;
+    text-transform:uppercase;
+    color: transparent;
+    background: linear-gradient(to left, #1e5799, #2ce0bf, #76dd2c, #dba62b, #e02cbf, #1e5799);
+    background-size: 1000px 100%;
+    animation: bg 15s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  @keyframes bg {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 10000px;
+    }
+}
+
+.page1 {
+  background: url(assets/page1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page2 {
+  background: url(assets/page2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page3 {
+  background: url(assets/page3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -25,6 +25,11 @@ export class NgxVoiceWebSpeechService implements NgxVoiceSpeech {
         };
     }
 
+    speak(message: string): void {
+        const utterance = new SpeechSynthesisUtterance(message);
+        window.speechSynthesis.speak(utterance);
+    }
+
     /**
      * Stop listening and end recognition
      */

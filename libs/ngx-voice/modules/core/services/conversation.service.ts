@@ -25,7 +25,6 @@ export class NgxVoiceConversationService {
     get userStream() {
         return this.user.asObservable();
     }
-    
     /**
      * Stream of agent responses
      */

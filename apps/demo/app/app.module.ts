@@ -1,7 +1,8 @@
 import {BrowserModule } from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
-import {NgxVoiceModule, NgxVoiceWebModule} from 'ngx-voice';
+import {NgxVoiceModule, NgxVoiceWebSpeechModule, NgxVoiceWebTextModule, NgxVoiceGoogleIntentModule} from 'ngx-voice';
+
 
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
@@ -17,12 +18,16 @@ import {Page3Component} from './pages/page3/page3.component';
     Page3Component
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     NgxVoiceModule,
-    NgxVoiceWebModule,
-    AppRoutingModule
+    NgxVoiceModule,
+    NgxVoiceWebSpeechModule.forRoot(),
+    NgxVoiceWebTextModule.forRoot(),
+    NgxVoiceGoogleIntentModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
