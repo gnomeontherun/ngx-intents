@@ -4,5 +4,9 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  dialogflow: {
+    bearerid: 'c5f8bed2c9c94d37a414c07589aab9f2',
+    sessionid: '70b98898-4d3b-4fff-8079-bce4167c7e13'
+  }
 };

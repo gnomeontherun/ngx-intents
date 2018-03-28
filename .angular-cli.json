@@ -55,9 +55,9 @@
       }
     },
     {
-      "name": "space",
-      "root": "apps/space",
-      "outDir": "dist/space",
+      "name": "nav-dialogflow",
+      "root": "apps/nav-dialogflow",
+      "outDir": "dist/nav-dialogflow",
       "assets": [
         "assets",
         "favicon.ico"
