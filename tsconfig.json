@@ -17,11 +17,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "ngx-voice": ["libs/ngx-voice"],
-      "ngx-voice/web": ["libs/ngx-voice/web"],
-      "ngx-voice/web/intent": ["libs/ngx-voice/web/intent"],
-      "ngx-voice/web/speech": ["libs/ngx-voice/web/speech"],
-      "ngx-voice/web/text": ["libs/ngx-voice/web/text"]
+      "ngx-voice": ["libs/ngx-voice"]
     }
   },
   "exclude": [
