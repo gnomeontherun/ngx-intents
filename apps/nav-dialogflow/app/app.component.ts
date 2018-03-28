@@ -37,21 +37,21 @@ export class AppComponent {
     switch (page) {
       case '1': {
          this.router.navigate(['/page1']);
-         this.speechService.speak(`You have arrived on page ${page}`);
+         this.textService.speak(`You have arrived on page ${page}`);
          break;
       }
       case 'to': {
          this.router.navigate(['/page2']);
-         this.speechService.speak(`You have arrived on page ${page}`);
+         this.textService.speak(`You have arrived on page ${page}`);
          break;
       }
       case '3': {
          this.router.navigate(['/page3']);
-         this.speechService.speak(`You have arrived on page ${page}`);
+         this.textService.speak(`You have arrived on page ${page}`);
          break;
       }
       default: {
-        this.speechService.speak('Unknown route. Staying put.');
+        this.textService.speak('Unknown route. Staying put.');
         break;
       }
    }
